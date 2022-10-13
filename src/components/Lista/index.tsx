@@ -1,21 +1,9 @@
 import React from 'react';
+import { ITarefa } from '../../types/tarefa';
 import Item from './item';
 import './style.css';
 
-function Lista() {
-    const tarefas = [
-        {
-            tarefa: 'React',
-            tempo: '02:00:00'
-        },
-        {
-            tarefa: 'Javascript',
-            tempo: '01:00:00'
-        },{
-            tarefa: 'Typescript',
-            tempo: '3:00:00'
-        }
-    ];
+function Lista({ tarefas }: { tarefas: ITarefa[] }) {
 
     return (
         <aside className="listaTarefas">
