@@ -15,6 +15,9 @@ function Lista({ tarefas }: { tarefas: ITarefa[] }) {
                         key={index}
                         tarefa={item.tarefa}
                         tempo={item.tempo}
+                        selecionado={item.selecionado}
+                        completado={item.completado}
+                        id={item.id}
                     />
                 ))}
             </ul>
