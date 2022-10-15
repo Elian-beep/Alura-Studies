@@ -1,6 +1,6 @@
 import React from 'react';
 import { ITarefa } from '../../../types/tarefa';
-import '../style.css';
+import './item.css';
 
 interface Props extends ITarefa {
     selecionaTarefa: (tarefaSelecionada: ITarefa) => void,
@@ -8,8 +8,8 @@ interface Props extends ITarefa {
 
 export default function Item(
     {
-        tarefa, tempo, selecionado, completado, id, selecionaTarefa }: Props): JSX.Element {
-    console.log('item atual: ', { tarefa, tempo, selecionado, completado, id });
+        tarefa, tempo, selecionado, completado, id, selecionaTarefa
+    }: Props): JSX.Element {
 
     return (
         <li className={`item ${selecionado ? 'itemSelecionado' : ''}`} onClick={() => selecionaTarefa({

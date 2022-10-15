@@ -12,8 +12,8 @@ function App() {
   function selecionaTarefa(tarefaSelecionada: ITarefa){
     setSelecionado(tarefaSelecionada);
     setTarefas(tarefasAnteriores => tarefasAnteriores.map(tarefa => ({
-      ...tarefa, //? Capturou a tarefa clicada
-      selecionado: tarefa.id == tarefaSelecionada.id ? true : false, //? Vai mudar a propriedade apenas da tarefa clicada
+      ...tarefa, // Capturou a tarefa clicada
+      selecionado: tarefa.id == tarefaSelecionada.id ? true : false, // Vai mudar a propriedade apenas da tarefa clicada
     })));
   }
 
